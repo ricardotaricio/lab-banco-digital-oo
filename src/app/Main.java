@@ -1,3 +1,8 @@
+package app;
+import banco.Cliente;
+import banco.Conta;
+import banco.ContaCorrente;
+import banco.ContaPoupanca;
 
 public class Main {
 
@@ -11,7 +16,10 @@ public class Main {
 		cc.depositar(100);
 		cc.transferir(100, poupanca);
 		
+		cc.imprimirSaldo();
 		cc.imprimirExtrato();
+		
+		poupanca.imprimirSaldo();
 		poupanca.imprimirExtrato();
 	}
 
